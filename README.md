@@ -23,6 +23,13 @@ It also explores the broader attack lifecycle, including controlled payload deli
 
 The entire experiment was conducted using isolated virtual machines.
 
+## 📚 Documentation
+
+| Document | Description |
+|---|---|
+| [Project Report](project-report.md) | Detailed laboratory methodology, implementation, results, and security analysis. |
+| [Architecture](architecture.md) | Network topology, system components, and cryptographic architecture. |
+
 ## 🎯 Objectives
 
 - Understand the attack lifecycle.
