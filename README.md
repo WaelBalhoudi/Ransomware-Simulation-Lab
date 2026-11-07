@@ -90,22 +90,31 @@ The project demonstrates hybrid encryption using:
 | 05 | File encryption and impact analysis |
 | 06 | Cryptographic recovery |
 
-## 🖥️ Screenshots
+## 🖥️ Screenshots & Demonstration
 
-### Graphical interface
-*The simulated impact screen used to demonstrate encryption status.*
+### 1. Social Engineering Delivery
+*The simulated legitimate download page used to deliver the remote access payload.*
+![Social Engineering](screenshots/social-engineering.png)
+
+### 2. Remote Session & Code Execution
+*Metasploit Meterpreter session uploading the encryption engine and executing it remotely on the Windows VM to encrypt target files.*
+![Remote Session](screenshots/meterpreter-session.png)
+![Remote Session](screenshots/meterpreter-session2.png)
+
+### 3. Impact Interface (GUI)
+*The simulated impact screen displaying the encryption status and countdown timer.*
 ![GUI Interface](screenshots/gui-interface.png)
 
-### Encrypted files
-*Files renamed with the `.locked` extension after AES encryption.*
+### 4. Encrypted Files
+*Files successfully overwritten with AES-GCM ciphertext and renamed with the `.locked` extension.*
 ![Encrypted Files](screenshots/encrypted-files.png)
 
-### Remote session demonstration
-*Metasploit Meterpreter session executing the script remotely.*
-![Remote Session](screenshots/meterpreter-session.png)
+### 5. Decryption Prompt
+*The recovery interface requiring the RSA private key to unlock the AES session key.*
+![Decrypt Prompt](screenshots/decrypt-prompt.png)
 
-### Successful recovery
-*Files restored to their original state using the RSA private key.*
+### 6. Successful Recovery
+*Files successfully restored to their original state and content.*
 ![File Recovery](screenshots/recovery.png)
 
 ## 🛠️ Technologies
